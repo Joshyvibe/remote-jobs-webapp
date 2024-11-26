@@ -77,7 +77,6 @@ This repository contains resources to help you build a comprehensive remote jobs
 
 Below are some images showcasing the UI of the web application:
 
-*Include your screenshots or links to screenshots here.*
 
 ---
 
