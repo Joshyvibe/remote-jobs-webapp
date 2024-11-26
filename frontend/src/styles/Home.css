@@ -1,0 +1,376 @@
+/* src/styles/home.css */
+
+/* Styling for the job form section */
+.job-form-section {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* General form styling */
+.job-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: hsl(208, 71%, 11%);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.job-form h1{
+ color: #fff;
+}
+
+/* Styling for form labels */
+.job-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Styling for form inputs */
+.job-form input[type="text"],
+.job-form textarea,
+.job-form input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0a294b;
+}
+
+/* Styling for the text area */
+.job-form textarea {
+  resize: vertical;
+  min-height: 150px; /* Increase height for better readability */
+  max-height: 400px; /* Prevents the textarea from growing too large */
+}
+
+/* Styling for form buttons */
+.job-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.job-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for form error and success messages */
+.job-form .error {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.job-form .success {
+  color: #5bc0de;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Additional styling for file input */
+.job-form input[type="file"] {
+  padding: 0; /* Remove padding to match file input default */
+  border: none; /* Remove border for a cleaner look */
+}
+
+/* Ensure proper spacing */
+.job-form-section {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Styling for form job list */
+.job-list-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Center the job list section */
+  margin: 0;
+}
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  max-width: 800px; /* Set a maximum width for the job list */
+  width: 100%; /* Ensure the job list takes full width available up to the max width */
+}
+
+.job-item-link {
+  text-decoration: none; /* Remove default underline */
+}
+
+.job-item {
+  background-color: #0a294b;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer; /* Change cursor on hover */
+  max-width: 100%; /* Ensure the job item doesn't exceed the width of its container */
+  width: 100%; /* Make job item take full width of the container */
+}
+
+.job-item:hover {
+  border: 1px solid #ddd;
+}
+
+.company-logo {
+  max-width: 80px; /* Adjust logo size */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Container for job details */
+
+
+.job-details h2,
+.job-list h1{
+  color: #fff !important;
+}
+
+.job-details .location{
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 100;
+}
+
+/* Styling for job title */
+.job-item h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Styling for company name and location */
+.job-item p {
+  margin: 5px 0;
+  color: #fff;
+}
+
+/* Optional: Styling for the loading text */
+.job-list p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Job detail page */
+.job-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.job-description .apply-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid #007bff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.job-description .apply-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  border-color: #0056b3;
+}
+
+
+.job-header {
+  margin-bottom: 20px;
+}
+
+.job-header .job-title {
+  font-size: 4em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.job-posted {
+  font-size: 1.3rem;
+  color: #f1ebeb;
+}
+
+
+.job-location {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #d2d0d0;
+}
+
+.job-description {
+  line-height: 1.6;
+  color: #fbfafa;
+  font-size: 1em;
+}
+
+.job-description p {
+  margin: 10px 0;
+}
+
+
+/* Testimonial Section */
+
+.testimonials {
+  padding: 40px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.testimonial-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* Center-align testimonial items */
+}
+
+.testimonial-item {
+  background-color: #0a294b;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px; /* Limit width of testimonial items */
+  width: 100%; /* Ensure full width up to max-width */
+  display: flex;
+  align-items: center; /* Center-align content vertically */
+  gap: 20px; /* Space between avatar and content */
+}
+
+.testimonial-avatar {
+  width: 80px; /* Size of the avatar */
+  height: 80px;
+  border-radius: 50%; /* Make avatar circular */
+  object-fit: cover; /* Ensure the image covers the space */
+}
+
+.testimonial-content {
+  flex: 1;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: #fff; /* Text color for testimonials */
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-size: 0.9rem;
+  color: #fff; /* Lighter color for the author info */
+}
+
+
+/* Footer Styling */
+.footer {
+  background-color: hsl(209, 72%, 14%);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Footer Text Styling */
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .testimonials {
+      padding: 20px; /* Reduce padding on smaller screens */
+  }
+
+  .testimonials h2 {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .testimonial-item {
+      flex-direction: column; /* Stack avatar and content vertically */
+      align-items: center; /* Center-align items */
+      gap: 15px; /* Reduce space between avatar and content */
+  }
+
+  .notfound h1, 
+  .notfound p{
+    font-size: 1.5rem;
+  }
+
+  .testimonial-avatar {
+      width: 60px; /* Adjust avatar size for smaller screens */
+      height: 60px;
+  }
+
+  .testimonial-text {
+      font-size: 0.9rem; /* Adjust text size for readability */
+  }
+
+  .testimonial-author {
+      font-size: 0.8rem; /* Adjust author info size */
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.modal button {
+  margin: 0 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2330c2;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.modal button:hover {
+  background-color: #323fce;
+}

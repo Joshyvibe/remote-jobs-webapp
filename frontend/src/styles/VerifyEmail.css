@@ -1,0 +1,77 @@
+/* VerifyEmail.css */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    max-width: 400px;
+    margin: 20px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff !important;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.code-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.code-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 5px;
+    padding: 5px;
+}
+
+.code-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.error-message,
+.success-message {
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form-button:disabled {
+    background-color: #aaa;
+}

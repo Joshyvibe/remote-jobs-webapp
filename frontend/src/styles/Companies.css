@@ -1,0 +1,114 @@
+.companies-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    color: #fff !important; /* Ensure text color is white */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.companies-container h1 {
+    color: #fff !important; /* Ensure header color is white */
+    text-align: center;
+    margin: auto;
+}
+
+.companies-container h5 {
+    background-color: hsl(0, 11%, 78%) !important;
+    color: rgb(18, 114, 18) !important;
+    display: inline-block;
+    padding: 4 px;
+    border-radius: 5px;
+}
+
+.company-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.company-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.company-card {
+    background-color: hsl(208, 71%, 11%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    flex: 1 1 300px; 
+    max-width: 500px; 
+    margin: 10px; 
+    color: #fff; 
+}
+
+
+.company-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 4px rgba(212, 203, 203, 0.621);
+}
+
+.company-card .company-logo {
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 50px; /* Space between logo and text */
+    flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+.company-details {
+    flex: 1;
+}
+
+.company-details h2 {
+    margin: 0;
+    font-size: 1.2rem; /* Adjust size as needed */
+    color: #fff;
+}
+
+.company-details h5 {
+    padding: 5px;
+    font-size: 0.9rem; /* Adjust size as needed */
+}
+
+.company-details p {
+    margin: 10px 0;
+    font-size: 0.9rem; /* Adjust size as needed */
+}
+
+
+/* Media query for small screens */
+@media (max-width: 767px) {
+    .company-card {
+        flex-direction: column; /* Stack logo and text vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    .company-logo {
+        margin-right: 0;
+        margin-bottom: 10px; /* Space below logo */
+    }
+}
+
+/* Media query for medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    .company-card {
+        flex: 1 1 calc(50% - 20px); /* Two cards per row on medium screens */
+    }
+}
+
+/* Media query for large screens */
+@media (min-width: 992px) {
+    .company-card {
+        flex: 1 1 calc(33.333% - 20px); /* Three cards per row on large screens */
+    }
+}
