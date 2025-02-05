@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import api from '../api';
 import "../styles/Companies.css";
 
-// Helper function to limit words in a string
+// function to limit words in a string
 const truncateWords = (text, numWords) => {
   const words = text.split(' ');
   if (words.length > numWords) {
@@ -16,7 +16,7 @@ const Companies = () => {
   const [companies, setCompanies] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-  const [companiesPerPage] = useState(10); // Set the number of companies per page
+  const [companiesPerPage] = useState(10); /
   const [totalCompanies, setTotalCompanies] = useState(0);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const Companies = () => {
         const response = await api.get(`/companies/?page=${currentPage}&page_size=${companiesPerPage}`);
         console.log(response.data);
         setCompanies(response.data.results);
-        setTotalCompanies(response.data.count); // assuming your backend returns the total company count
+        setTotalCompanies(response.data.count); 
       } catch (error) {
         console.error('Error fetching companies:', error);
       } finally {
