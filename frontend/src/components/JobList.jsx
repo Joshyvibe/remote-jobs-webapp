@@ -21,8 +21,8 @@ const JobList = () => {
           url = `http://localhost:8000/jobs/company/${companyName}/?page=${currentPage}&page_size=${jobsPerPage}`;
         }
         const response = await axios.get(url);
-        setJobs(response.data.results); // assuming your backend returns a paginated response
-        setTotalJobs(response.data.count); // assuming your backend returns the total job count
+        setJobs(response.data.results); 
+        setTotalJobs(response.data.count); 
       } catch (error) {
         console.error('Error fetching jobs:', error);
       } finally {
