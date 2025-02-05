@@ -15,7 +15,6 @@ const JobForm = () => {
   const [logo, setLogo] = useState(null);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
-
   const logoInputRef = useRef(null);
   const navigate = useNavigate();
   const { isAuthorized } = useAuthentication();
