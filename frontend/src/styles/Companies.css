@@ -2,7 +2,7 @@
     padding: 20px;
     max-width: 1200px;
     margin: auto;
-    color: #fff !important; /* Ensure text color is white */
+    color: #fff !important; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,7 @@
 }
 
 .companies-container h1 {
-    color: #fff !important; /* Ensure header color is white */
+    color: #fff !important; 
     text-align: center;
     margin: auto;
 }
@@ -59,7 +59,7 @@
 }
 
 .company-card .company-logo {
-    max-width: 100px; /* Adjust size as needed */
+    max-width: 100px; 
     height: auto;
     margin-right: 50px; /* Space between logo and text */
     flex-shrink: 0; /* Prevent logo from shrinking */
@@ -71,18 +71,18 @@
 
 .company-details h2 {
     margin: 0;
-    font-size: 1.2rem; /* Adjust size as needed */
+    font-size: 1.2rem; 
     color: #fff;
 }
 
 .company-details h5 {
     padding: 5px;
-    font-size: 0.9rem; /* Adjust size as needed */
+    font-size: 0.9rem; 
 }
 
 .company-details p {
     margin: 10px 0;
-    font-size: 0.9rem; /* Adjust size as needed */
+    font-size: 0.9rem; 
 }
 
 
